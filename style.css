@@ -1,20 +1,19 @@
-/* {
-    border: 1px solid black;
-}*/
+
 body {
     margin: 0;
     padding: 0;
+
+    overflow-x: hidden;
 }
 
 header {
     height: 570px;  
     width: 100vw;
-   background: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right,
+    background: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right,
         hsl(13, 100%, 72%) 0%,
         hsl(13, 100%, 72%) 35%,
         hsl(353, 100%, 62%) 100%);
-    /*linear-gradient(to right, hsl(13, 100%, 72%),hsl(13, 100%, 72%),
-            hsl(353, 100%, 62%));*/
+
    
     background-repeat: no-repeat;
     background-size: auto;
@@ -51,18 +50,193 @@ header {
     align-items: center;
 
     gap: 35px;
-}
-
-.nav > div > a {
-    color: white;
-    text-decoration: none;
-
+    padding-bottom: 0;
 }
 
 .arrow {
     display: inline;
     padding-left: 5px;
 }
+
+/* Product - Nav */
+
+.product-link > a, .company-link > a, .connect-link > a {
+    color: white;
+    text-decoration: none;
+
+    padding-bottom: 20px;
+
+}
+
+.product-link > a:hover, .company-link > a:hover,
+.connect-link > a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.product-menu {
+    position: relative;
+   
+  
+}
+
+.product-submenu {
+    display: none;
+    
+    background-color: white;
+
+    padding: 25px 25px 25px 15px;
+    margin-top: 20px;
+    
+    
+    border-radius: 7px;
+
+    position: absolute;
+    
+}
+
+.product-submenu > a {
+    color: hsl(240, 10%, 16%);
+    text-decoration: none;
+
+}
+
+.product-submenu > a:hover {
+    font-weight: bold;
+}
+
+.product-menu:hover .product-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-menu:hover .product-link > div > img {
+
+    transform: rotate(180deg);
+}
+
+/* Company - Nav */
+
+.company-link>a {
+    color: white;
+    text-decoration: none;
+
+    padding-bottom: 20px;
+
+}
+
+
+.company-link>a:hover {
+    text-decoration: underline;
+
+}
+
+
+.company-menu {
+    position: relative;
+
+
+}
+
+.company-submenu {
+    display: none;
+
+    background-color: white;
+
+    padding: 25px 25px 25px 15px;
+    margin-top: 20px;
+
+
+    border-radius: 7px;
+
+    position: absolute;
+
+}
+
+.company-submenu>a {
+    color: hsl(240, 10%, 16%);
+    text-decoration: none;
+
+}
+
+.company-submenu>a:hover {
+    font-weight: bold;
+}
+
+.company-menu:hover .company-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.company-menu:hover .company-link > div > img {
+
+    transform: rotate(180deg);
+}
+
+
+/* Connect - Nav */
+
+.connect-link>a {
+    color: white;
+    text-decoration: none;
+
+    padding-bottom: 20px;
+
+}
+
+
+.connect-link>a:hover {
+    text-decoration: underline;
+
+}
+
+
+.connect-menu {
+    position: relative;
+
+
+}
+
+.connect-submenu {
+    display: none;
+
+    background-color: white;
+
+    padding: 25px 25px 25px 15px;
+    margin-top: 20px;
+
+
+    border-radius: 7px;
+
+    position: absolute;
+
+}
+
+.connect-submenu>a {
+    color: hsl(240, 10%, 16%);
+    text-decoration: none;
+
+}
+
+.connect-submenu>a:hover {
+    font-weight: bold;
+}
+
+.connect-menu:hover .connect-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.connect-menu:hover .connect-link>div>img {
+
+    transform: rotate(180deg);
+}
+
 
 .log-sign {
     display: flex;
@@ -85,6 +259,11 @@ header {
     background-color: white;
 
     border-radius: 25px 25px 25px 25px;
+}
+
+.sign-up:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
 }
 
 .header-about {
@@ -123,6 +302,11 @@ header {
     border-radius: 25px 25px 25px 25px;
 }
 
+.btn1:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
 .btn2 {
     font-size: 16px;
     font-weight: 600;
@@ -137,6 +321,11 @@ header {
     border-radius: 25px 25px 25px 25px;
 
     margin-left: 5px;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: hsl(355, 100%, 74%);
 }
 
 .sections {
@@ -306,4 +495,135 @@ header {
 
 .section-three-para1 {
     margin-bottom: 80px;
+}
+
+/* Footer */
+
+footer {
+    height: 400px;
+    width: 100vw;
+    
+    color: white;
+    background-color: hsl(240, 10%, 16%);
+
+    font-family: "Ubuntu";
+
+    padding-top: 75px;
+
+    border-radius: 0 70px 0 0;
+    
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+/* Product Section - Footer */
+.product-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+
+}
+
+.product-h {
+    margin-bottom: 45px;
+
+    font-weight: 600;
+}
+
+.product-links > a {
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.product-links > a:hover {
+    text-decoration: underline;
+
+}
+
+/* Company Section - Footer */
+.company-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+
+}
+
+.company-h {
+    margin-bottom: 45px;
+
+    font-weight: 600;
+}
+
+.company-links>a {
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.company-links>a:hover {
+    text-decoration: underline;
+
+}
+
+/* Connect Section - Footer */
+.connect-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+
+}
+
+.connect-h {
+    margin-bottom: 45px;
+
+    font-weight: 600;
+}
+
+.connect-links>a {
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.connect-links>a:hover {
+    text-decoration: underline;
+
+}
+
+/*Nav menu*/
+
+.menu {
+    background-color: white;
+    padding: 25px;
+
+    border-radius: 7px;
+    
+    position: absolute;
+    top: 105px;
+    left: 240px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: hsl(240, 10%, 16%);
 }
