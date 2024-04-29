@@ -1,14 +1,15 @@
-
 body {
     margin: 0;
     padding: 0;
 
     overflow-x: hidden;
+  
 }
 
 header {
-    height: 570px;  
+    height: 570px; 
     width: 100vw;
+
     background: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right,
         hsl(13, 100%, 72%) 0%,
         hsl(13, 100%, 72%) 35%,
@@ -18,8 +19,6 @@ header {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 26.8% 52%;
-
-  
 
     border-radius: 0 0 0 65px;
     font-family: "Ubuntu";
@@ -277,14 +276,14 @@ header {
    
 }
 
-.title {
+.header-title {
     color: white;
     font-size: 64px;
     
     margin-bottom: 10px;
 }
 
-.text {
+.header-text {
     color: white;
     font-size: 21px;
     margin-bottom: 50px;
@@ -357,6 +356,8 @@ header {
 }
 
 .section-one-title {
+    font-size: 32px;
+    font-weight: 600;
     margin-top: 70px;
     margin-right: -90px;
     margin-bottom: 90px;
@@ -511,6 +512,7 @@ footer {
     padding-top: 75px;
 
     border-radius: 0 70px 0 0;
+
     
 }
 
@@ -518,8 +520,24 @@ footer {
     display: flex;
     justify-content: space-evenly;
 
+    margin-bottom: 100px;
+
     
 }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution>a {
+    text-decoration: none;
+
+    color: hsl(13, 100%, 72%);
+}
+
+.attribution>a:hover {
+    color: hsl(353, 100%, 62%);
+}
+
 
 /* Product Section - Footer */
 .product-links {
@@ -626,4 +644,157 @@ footer {
 .menu > a {
     text-decoration: none;
     color: hsl(240, 10%, 16%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .section-one-info-paras {
+
+        padding-right: 30px;
+        padding-left: 30px;
+        
+    }
+
+    .section-one-title {
+        margin-bottom: 50px;
+
+    }
+
+    .section-one-para1 {
+        padding-bottom: 10px;
+    }
+
+    .section-two-para1 {
+        margin-right: 50px;
+    }
+
+    .section-three-info {
+        padding-top: 150px;
+    }
+
+    .section-three-para1 {
+        margin-bottom: 20px;
+    }
+  
+}
+
+@media screen and (max-width: 956px) {
+    .section-one {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .section-one-title {
+        text-align: start;
+        padding-left: 28px;
+    }
+
+    .phones {
+        position: absolute;
+        top: 1910px;
+    }
+
+    .section-three {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-three-para2 {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .logo-nav-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+    }
+    
+    .nav {
+        gap: 15px;
+    }
+    .phones > img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .section-two-info {
+        line-height: normal;
+        margin-left: -200px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .section-two-info {
+        line-height: normal;
+        margin-left: -250px;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .phones {
+        left: 50px;
+    }
+
+    .section-two-info {
+        line-height: normal;
+        margin-left: -300px;
+    }
+
+   
+}
+
+@media screen and (max-width: 680px) {
+    .sign-up {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .sign-up {
+        padding: 15px 30px;
+    }
+
+    .section-two-info {
+        font-size: 90%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .sign-up {
+        padding: 15px 20px;
+    }
+    .section-two-info {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .sign-up {
+        padding: 15px 15px;
+    }
+
+    .section-two-info {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .sign-up {
+        padding: 15px 12px;
+    }
+
+    .section-two-info {
+        font-size: 70%;
+    }
 }
